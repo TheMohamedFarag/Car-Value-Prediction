@@ -1,0 +1,13 @@
+# Data & Raw Files
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+
+# Python cache & Environment
+__pycache__/
+*.pyc
+.env
+.venv/
