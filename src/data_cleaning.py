@@ -21,7 +21,7 @@ df = df.dropna(subset=["price", "year"]).copy()
 
 # Keep realistic car prices and valid model years
 df = df[df["price"].between(500, 500_000)].copy()
-df = df[df["year"].between(1886, 2030)].copy()
+df = df[df["year"].between(1886, 2027)].copy()
 
 # Convert year to integer
 df["year"] = df["year"].astype(int)
