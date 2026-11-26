@@ -1,7 +1,7 @@
 # Phase 1: Business Understanding & Project Objectives
 
 ## 1. Problem Statement
-The used car market experiences high price volatility and asymmetry of information between buyers and sellers. Without a standardized valuation benchmark, individual buyers risk overpaying, while sellers and dealerships struggle to price inventory competitively and efficiently.
+The automotive market experiences high price volatility and asymmetry of information between buyers and sellers. Without a standardized valuation benchmark, individual buyers risk overpaying, while sellers and dealerships struggle to price inventory competitively and efficiently.
 
 ## 2. Project Goals & Success Criteria
 - **Machine Learning Metric:** Build a regression model that achieves an R2 score >= 0.85 and minimizes Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE) on unseen test data.
@@ -14,10 +14,10 @@ The used car market experiences high price volatility and asymmetry of informati
 ## 4. Target & Currency
 - **Target Variable:** `price` (Continuous variable representing vehicle fair market value).
 - **Currency:** USD ($).
-- **Scope:** Global / US Used Car Market.
+- **Scope:** Global / US Car Market.
 
 ## 5. Data Strategy & Composite Key Integration
 Data will be fetched and combined from three sources:
 1. **Kaggle (CSV):** Core historical dataset containing base listing attributes.
 2. **NHTSA VPIC API:** Feature enrichment source providing technical engine/vehicle specifications. Joined via composite key: `(Make + Model + Year)`.
-3. **Web Scraping (Craigslist Live Listings):** Real-time market listings stacked vertically via concatenation.
+3. **Web Scraping (Live Car Listings):** Real-time market listings stacked vertically via concatenation.
