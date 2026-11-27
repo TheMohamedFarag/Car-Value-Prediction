@@ -1,0 +1,47 @@
+{
+  "exported_at_utc": "2026-11-27T14:46:54.029306+00:00",
+  "winning_config": {
+    "model": "xgboost",
+    "target": "raw",
+    "features": "full",
+    "outliers": "keep_all",
+    "cv_mae": 4143.05517578125,
+    "cv_rmse": 10210.575384238364,
+    "cv_r2": 0.6370855927467346,
+    "fit_time_s": 7.28790249824524,
+    "subsample_n": 20000
+  },
+  "best_params": {
+    "base__model__subsample": 0.9,
+    "base__model__reg_lambda": 1.0,
+    "base__model__n_estimators": 400,
+    "base__model__min_child_weight": 1,
+    "base__model__max_depth": 9,
+    "base__model__learning_rate": 0.05,
+    "base__model__colsample_bytree": 0.6
+  },
+  "cv_rmse_dollars_stage2": 10210.575384238364,
+  "test_metrics": {
+    "test_mae": 3448.22314453125,
+    "test_rmse": 8749.132071239981,
+    "test_r2": 0.7501221895217896
+  },
+  "input_columns": [
+    "make",
+    "model",
+    "year",
+    "mileage",
+    "condition",
+    "cylinders",
+    "fuel",
+    "title_status",
+    "transmission",
+    "drive",
+    "type"
+  ],
+  "required_modules": [
+    "05_feature_engineering.py",
+    "06_machine_learning.py"
+  ],
+  "usage": "# Requires 05_feature_engineering.py and 06_machine_learning.py on sys.path (the pickle references their classes).\nimport sys, joblib, pandas as pd\nsys.path.append('<folder containing the .py modules>')\nmodel = joblib.load('artifacts/models/best_car_price_model.pkl')\nX = pd.DataFrame([...])  # columns: ['make', 'model', 'year', 'mileage', 'condition', 'cylinders', 'fuel', 'title_status', 'transmission', 'drive', 'type']\nprices = model.predict(X)  # returns price in dollars"
+}

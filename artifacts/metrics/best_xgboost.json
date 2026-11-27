@@ -1,0 +1,11 @@
+{
+  "model": "xgboost",
+  "target": "raw",
+  "features": "full",
+  "outliers": "keep_all",
+  "cv_mae": 4143.05517578125,
+  "cv_rmse": 10210.575384238364,
+  "cv_r2": 0.6370855927467346,
+  "fit_time_s": 7.28790249824524,
+  "subsample_n": 20000
+}

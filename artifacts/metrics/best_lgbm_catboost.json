@@ -1,0 +1,11 @@
+{
+  "model": "lightgbm",
+  "target": "raw",
+  "features": "full",
+  "outliers": "keep_all",
+  "cv_mae": 4384.716378423268,
+  "cv_rmse": 10264.337079450543,
+  "cv_r2": 0.633518939213066,
+  "fit_time_s": 3.8243104457855224,
+  "subsample_n": 20000
+}
