@@ -1,0 +1,11 @@
+[01/8] xgboost       log1p core  keep_all  -> cv_rmse=10,516$  cv_r2=0.6160  (7s)
+[02/8] xgboost       log1p core  filtered  -> cv_rmse=10,532$  cv_r2=0.6146  (7s)
+[03/8] xgboost       log1p full  keep_all  -> cv_rmse=10,438$  cv_r2=0.6214  (8s)
+[04/8] xgboost       log1p full  filtered  -> cv_rmse=10,414$  cv_r2=0.6229  (8s)
+[05/8] xgboost       raw   core  keep_all  -> cv_rmse=10,243$  cv_r2=0.6347  (7s)
+[06/8] xgboost       raw   core  filtered  -> cv_rmse=10,301$  cv_r2=0.6304  (7s)
+[07/8] xgboost       raw   full  keep_all  -> cv_rmse=10,211$  cv_r2=0.6371  (7s)
+[08/8] xgboost       raw   full  filtered  -> cv_rmse=10,289$  cv_r2=0.6314  (8s)
+
+Saved comparison table -> artifacts/metrics/stage2_xgboost.csv
+Saved best config    -> artifacts/metrics/best_xgboost.json

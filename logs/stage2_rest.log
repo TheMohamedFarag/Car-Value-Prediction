@@ -1,0 +1,20 @@
+[01/16] lightgbm      log1p core  keep_all  -> cv_rmse=10,586$  cv_r2=0.6115  (3s)
+[02/16] lightgbm      log1p core  filtered  -> cv_rmse=10,342$  cv_r2=0.6285  (3s)
+[03/16] lightgbm      log1p full  keep_all  -> cv_rmse=10,458$  cv_r2=0.6204  (4s)
+[04/16] lightgbm      log1p full  filtered  -> cv_rmse=10,314$  cv_r2=0.6305  (4s)
+[05/16] lightgbm      raw   core  keep_all  -> cv_rmse=10,363$  cv_r2=0.6267  (4s)
+[06/16] lightgbm      raw   core  filtered  -> cv_rmse=10,336$  cv_r2=0.6284  (4s)
+[07/16] lightgbm      raw   full  keep_all  -> cv_rmse=10,264$  cv_r2=0.6335  (4s)
+[08/16] lightgbm      raw   full  filtered  -> cv_rmse=10,286$  cv_r2=0.6320  (4s)
+[09/16] catboost      log1p core  keep_all  -> cv_rmse=10,785$  cv_r2=0.5969  (39s)
+[10/16] catboost      log1p core  filtered  -> cv_rmse=10,668$  cv_r2=0.6053  (39s)
+[11/16] catboost      log1p full  keep_all  -> cv_rmse=10,682$  cv_r2=0.6045  (42s)
+[12/16] catboost      log1p full  filtered  -> cv_rmse=10,556$  cv_r2=0.6133  (42s)
+[13/16] catboost      raw   core  keep_all  -> cv_rmse=10,346$  cv_r2=0.6284  (40s)
+[14/16] catboost      raw   core  filtered  -> cv_rmse=10,365$  cv_r2=0.6267  (40s)
+[15/16] catboost      raw   full  keep_all  -> cv_rmse=10,269$  cv_r2=0.6335  (43s)
+[16/16] catboost      raw   full  filtered  -> cv_rmse=10,395$  cv_r2=0.6247  (43s)
+
+Saved comparison table -> artifacts/metrics/stage2_lgbm_catboost.csv
+Saved best config    -> artifacts/metrics/best_lgbm_catboost.json
+REST DONE in 1829s
